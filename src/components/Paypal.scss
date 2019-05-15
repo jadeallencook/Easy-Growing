@@ -1,0 +1,17 @@
+form.Paypal {
+    table {
+        display: none;
+    }
+    span {
+        display: block;
+        float: left;
+        margin-right: 15px;
+        margin-top: -1px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    form.Paypal {
+        
+    }
+}

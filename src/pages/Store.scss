@@ -1,0 +1,62 @@
+div.Store {
+    >input {
+        margin: 0px 15px;
+        padding: 0px 5px;
+    }
+    >input,
+    >select {
+        font-size: 1em;
+        width: 250px;
+    }
+    >ul {
+        list-style: none;
+        padding: 0px 15px;
+
+        >li {
+            display: block;
+            min-height: 125px;
+
+            >div {
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            >div.image {
+                width: 25%;
+                >div {
+                    height: 150px;
+                    margin-bottom: 15px;
+                    width: 90%;
+                    background-position: center center;
+                    background-size: cover;
+                    background-color: #333;
+                }
+            }
+
+            >div.description {
+                width: 75%;
+                padding-bottom: 15px;
+                h3 {
+                    margin-top: 0px;
+                    font-size: 0.85em;
+                    span {
+                        font-weight: 100;
+                    }
+                }
+                p {
+                    font-size: 0.75em;
+                }
+                >form {
+                    margin-bottom: 25px;
+                    input[type="image"] {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    div.Store {}
+}

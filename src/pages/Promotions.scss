@@ -1,0 +1,13 @@
+div.Promotions {
+    font-size: 0.85em;
+    padding: 0px 15px 25px 15px;
+    form {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    div.Promotions {
+        
+    }
+}

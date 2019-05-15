@@ -1,0 +1,15 @@
+div.Home {
+    p {
+        font-size: 0.85em;
+    }
+    h1, p{
+        padding: 0px 15px;
+    }
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    div.Home {
+        
+    }
+}
