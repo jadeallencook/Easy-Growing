@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Easy-Growin/build/precache-manifest.5c1c0276a220a7982bc28687b93c6998.js"
+  "/Easy-Growin/build/precache-manifest.4cf43d4203ac98eb0132e5ccfe4e85b9.js"
 );
 
 workbox.clientsClaim();
