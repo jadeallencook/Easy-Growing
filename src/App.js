@@ -1,26 +1,27 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import './App.scss';
+import React, { Component } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
 
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 
-import Home from './pages/Home';
-import Store from './pages/Store';
-import Promotions from './pages/Promotions';
-import Contact from './pages/Contact';
+import Home from "./pages/Home";
+import Store from "./pages/Store";
+import Promotions from "./pages/Promotions";
+import Contact from "./pages/Contact";
 
 class App extends Component {
   render() {
     return (
       <div className="App content">
-        <Router>
-            <Navbar />
-            <Route path="/" exact component={Home} />
-            <Route path="/Easy-Growin/build" exact component={Home} />
-            <Route path="/store" exact component={Store} />
-            <Route path="/promotions" exact component={Promotions} />
-            <Route path="/contact" exact component={Contact} />
-        </Router>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/store" exact element={<Store />} />
+            <Route path="/promotions" exact element={<Promotions />} />
+            <Route path="/contact" exact element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     );
   }
