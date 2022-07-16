@@ -21,6 +21,7 @@ class App extends Component {
             <Route path="/promotions" exact element={<Promotions />} />
             <Route path="/contact" exact element={<Contact />} />
           </Routes>
+          <footer>Easy Growing Copyright 2014</footer>
         </BrowserRouter>
       </div>
     );

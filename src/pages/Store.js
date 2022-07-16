@@ -45,7 +45,7 @@ class Store extends Component {
                                         <div className="image">
                                             <div
                                                 style={{
-                                                    backgroundImage: `url(https://jadeallencook.github.io/Easy-Growin/build/assets/images/products/${encodeURI((image) ? image : name)}.png)`
+                                                    backgroundImage: `url(/assets/images/products/${encodeURI((image) ? image : name)}.png)`
                                                 }}
                                             ></div>
                                         </div><div className="description">
